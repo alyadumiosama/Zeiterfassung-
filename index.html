@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeiterfassung für Lehrlinge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Zeiterfassung für Lehrlinge</h1>
+    <form id="zeitForm">
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Von</th>
+            <th>Bis</th>
+            <th>Gearbeitete Stunden</th>
+            <th>Benötigtes Bis (für 7:30h)</th>
+          </tr>
+        </thead>
+        <tbody id="zeitTabelle"></tbody>
+      </table>
+    </form>
+    <div class="summary">
+      <p id="wochenSumme">Gesamt: 0 Stunden 0 Minuten</p>
+      <p id="ueberstunden">Überstunden (ab 7:30 pro Tag): 0 Stunden 0 Minuten</p>
+      <p id="restUeberstunden">Verbleibende Überstunden: 5 Stunden 0 Minuten</p>
+      <p id="warnung" class="warnung"></p>
+    </div>
+  </div>
+</body>
+</html>
