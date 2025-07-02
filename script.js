@@ -107,4 +107,6 @@ function berechne() {
   document.getElementById('ueberstunden').textContent = `Überstunden (ab 7:30 pro Tag): ${formatStundenUndMinuten(ueberstundenMinuten)}`;
   document.getElementById('restUeberstunden').textContent = `Verbleibende Überstunden: ${formatStundenUndMinuten(restÜberstundenMinuten)}`;
   document.getElementById('warnung').innerHTML = warnung;
+  document.getElementById('gesamtUeberstunden').textContent = `Gesammelte Überstunden gesamt: ${formatStundenUndMinuten(ueberstundenMinuten)}`;
+
 }
